@@ -6,8 +6,8 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 echo "Validando datos..."
-                sh 'python --version'
-                sh 'pip list'
+                sh 'python3 --version'
+                sh 'python3 -m pip list'
                 sh 'ls'
                 script {
                     currentBuild.displayName = "Nov-2022-BD55"
